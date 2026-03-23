@@ -40,6 +40,8 @@ services:
     stdin_open: true
     tty: true
     restart: always
+    privileged: true
+    cgroup: host
     volumes:
      - community_data:/var/www/onlyoffice/Data
      - community_log:/var/log/onlyoffice
@@ -101,6 +103,7 @@ services:
     restart: always
     stdin_open: true
     tty: true
+    privileged: true
     expose:
       - '8081'
       - '3306'
