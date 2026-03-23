@@ -59,8 +59,6 @@ services:
       - "indices.fielddata.cache.size=30%"
       - "indices.memory.index_buffer_size=30%" 
       - "ingest.geoip.downloader.enabled=false"
-    networks:
-    - onlyoffice    
     ulimits:
       memlock:
         soft: -1
